@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+group 'net.sargue'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.glassfish.jersey.containers:jersey-container-grizzly2-http:2.27'
+    compile 'org.glassfish.jersey.inject:jersey-hk2:2.27'
+}
+
+application {
+    mainClassName = "net.sargue.hibp.Main"
+}
