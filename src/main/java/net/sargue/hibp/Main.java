@@ -12,16 +12,17 @@ public class Main {
             System.err.println("Where:");
             System.err.println("  listening-URI: Where to listen, ex: http://localhost:8080");
             System.err.println("  path-to-password: path to hibp password list, ordered by hash, ex: pwned-passwords-sha1-ordered-by-hash-v4.txt");
+            System.exit(0);
         }
 
         File file = new File(args[1]);
         if (!file.exists()) {
             System.err.println("Password file doesn't exist.");
-            System.exit(1);
+            System.exit(0);
         }
         if (!file.canRead()) {
             System.err.println("Can't read password file.");
-            System.exit(2);
+            System.exit(0);
         }
 
         app = new App(args[0], file);
