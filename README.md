@@ -18,7 +18,7 @@ not mandatory.
 
 Download the passwords database. Specifically the SHA-1 ordered by hash.
 You can find direct link and torrent files
-[on this page]https://haveibeenpwned.com/Passwords).
+[on this page](https://haveibeenpwned.com/Passwords).
 
 After downloading decompress and take note of the path to the *txt* file.
 
